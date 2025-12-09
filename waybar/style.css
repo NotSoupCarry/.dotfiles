@@ -1,0 +1,78 @@
+@import url("/home/soup/.cache/wal/colors-waybar.css");
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 18px;
+    font-weight: bold;
+    background-color: transparent;
+    border-radius: 5px;
+    min-height: 0;
+}
+
+window,
+tooltip {
+    background-color: @background;
+}
+
+#waybar {
+    background: @background;
+    border-radius: 0;
+}
+
+#workspaces {
+    margin: 1px 0;
+}
+
+#workspaces button {
+    color: @color2;
+    border: none;
+    padding: 0 5px;
+}
+#workspaces button:hover {
+    color: @color3;
+    transition: none;
+    border-bottom: 1px solid @color3;
+    padding: 0 8px;
+}
+
+#workspaces button.active {
+    color: @color3;
+    border: 2px solid @color3;
+    padding: 0 8px;
+    margin: 0 2px;
+}
+
+#workspaces button.urgent {
+    background-color: @color1;
+    padding: 0 8px;
+}
+
+#custom-power,
+#tray,
+#bluetooth,
+#network,
+#battery,
+#pulseaudio,
+#clock {
+    color: @color2;
+    margin: 1px 0;
+    padding: 0 10px;
+}
+
+#custom-power:hover,
+#bluetooth:hover,
+#network:hover,
+#battery:hover,
+#pulseaudio:hover,
+#clock:hover {
+    background-color: alpha(@background, 0.6);
+}
+
+#clock {
+    margin-left: 10px;
+}
+
+#custom-power {
+    margin-left: 10px;
+    padding: 0px 10px 0 15px;
+}
