@@ -26,6 +26,8 @@ SELECTED_FILE="$WALLPAPER_DIR/$SELECTED_FILENAME"
     --transition-duration 5 \
     --transition-fps 60
 
+pkill swaync 
+swaync
 wal -i "$SELECTED_FILE"
 
 # --- End of Script ---
