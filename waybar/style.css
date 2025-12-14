@@ -53,7 +53,8 @@ tooltip {
 #network,
 #battery,
 #pulseaudio,
-#clock {
+#clock,
+#window {
     color: @color2;
     margin: 1px 0;
     padding: 0 10px;
