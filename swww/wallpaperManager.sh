@@ -16,11 +16,11 @@ done
 # Mostra rofi con anteprime centrate e uniformi
 SELECTED_FILENAME=$(echo -en "$WALLPAPER_LIST" | rofi -dmenu \
                     -i \
-                    -p "Scegli Sfondo" \
+                    -p "Select a wallpaper" \
                     -config "$ROFI_THEME_FILE" \
                     -show-icons \
                     -theme-str 'element { orientation: vertical; padding: 10px; }' \
-                    -theme-str 'element-icon { size: 15em; horizontal-align: 0.5; vertical-align: 0.5; }' \
+                    -theme-str 'element-icon { size: 25%; horizontal-align: 0.5; vertical-align: 0.5; }' \
                     -theme-str 'element-text { enabled: false; }' \
                     -theme-str 'listview { columns: 3; lines: 3; spacing: 3px; fixed-columns: true; flow: horizontal; }')
 
