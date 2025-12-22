@@ -3,6 +3,9 @@
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["tray", "battery", "custom/notification", "pulseaudio"],
 
+    "position": "top",
+    "height": 20,
+
     "custom/power": {
         "format": " ",
         "tooltip": false,
