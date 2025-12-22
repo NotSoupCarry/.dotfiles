@@ -1,0 +1,33 @@
+;; Variabili che si aggiornano
+(defpoll cpu :interval "2s" `scripts/get-cpu.sh`)
+(defpoll ram :interval "2s" `scripts/get-ram.sh`)
+(defpoll temp :interval "2s" `scripts/get-temp.sh`)
+
+;; Widget circolare
+(defwidget circular-stat [value label icon]
+  (box :class "stat-box" :orientation "v" :space-evenly false
+    (circular-progress :value value
+                       :thickness 8
+                       :start-at 75
+                       :clockwise true
+      (label :class "stat-icon" :text icon))
+    (label :class "stat-value" :text "${value}%")
+    (label :class "stat-label" :text label)))
+
+;; Finestra principale
+(defwindow stats
+  :monitor 0
+  :geometry (geometry :x "10px"
+                      :y "10px"
+                      :width "300px"
+                      :height "200px"
+                      :anchor "top right")
+  :stacking "overlay"
+  :windowtype "normal"
+  
+  (box :class "stats-container" :orientation "v" :space-evenly false
+    (label :class "title" :text "📊 System Stats")
+    (box :class "stats-grid" :spacing 20
+      (circular-stat :value cpu :label "CPU" :icon "")
+      (circular-stat :value ram :label "RAM" :icon ""))
+    (button :class "htop-btn" :onclick "kitty -e htop" "Open htop")))
