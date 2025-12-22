@@ -1,6 +1,6 @@
 {
-    "modules-left": ["custom/power", "hyprland/workspaces", "clock"],
-    "modules-center": ["hyprland/window"],
+    "modules-left": ["custom/power", "clock"],
+    "modules-center": ["hyprland/workspaces"],
     "modules-right": ["tray", "battery", "custom/notification", "pulseaudio"],
 
     "custom/power": {
@@ -92,8 +92,8 @@
     },
 
     "clock": {
-        "format": "{:%H:%M}",
-        "tooltip-format": "<span size='15000'><tt>{calendar}</tt></span>",
+"format": "{:%H:%M    %a %d %b}",
+        "tooltip": false,
         "calendar": {
             "mode": "month",
             "format": {
@@ -103,7 +103,7 @@
                 "today": "<span color='#F9E2AF'><b>{}</b></span>",
             }
         },
-        "on-click": "swaync-client -t -sw",
+        "on-click": "if hyprctl clients | grep -q 'class: floating_cal'; then pkill -f 'kitty --class floating_cal'; else kitty --class floating_cal -e bash -c 'cal -y; read'; fi",
     },
 
      "hyprland/window": {
