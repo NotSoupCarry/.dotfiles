@@ -95,7 +95,7 @@
     },
 
     "clock": {
-"format": "{:%H:%M    %a %d %b}",
+"format": "{:%a %d %b   %H:%M}",
         "tooltip": false,
         "calendar": {
             "mode": "month",
