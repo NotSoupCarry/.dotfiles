@@ -37,6 +37,6 @@ SELECTED_FILE="$WALLPAPER_DIR/$SELECTED_FILENAME"
   --transition-fps 60
 
 wal -i "$SELECTED_FILE"
-pkill swaync
-swaync &
+eww reload
+swaync-client -rs
 # --- End of Script ---

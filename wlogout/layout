@@ -16,21 +16,4 @@
     "text" : "Shutdown",
     "keybind" : "s"
 }
-{
-    "label" : "logout",
-    "action" : "loginctl kill-session $XDG_SESSION_ID",
-    "text" : "Logout",
-    "keybind" : "e"
-}
-{
-    "label" : "suspend",
-    "action" : "systemctl suspend",
-    "text" : "Suspend",
-    "keybind" : "u"
-}
-{
-    "label" : "hibernate",
-    "action" : "systemctl hibernate",
-    "text" : "Hibernate",
-    "keybind" : "h"
-}
+

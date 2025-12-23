@@ -14,11 +14,10 @@ button {
     border-radius: 20px;
     margin: 10px;
     color: @foreground;
-    border-color: @foreground;
     background-color: rgba(0, 0, 0, 0.5);
     outline-style: none;
     border-style: solid;
-	border-width: 0px;
+	  border-width: 0px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20%;
@@ -34,7 +33,6 @@ button:hover,button:focus {
     transition: all 0.3s cubic-bezier(.55,0.0,.28,1.682);
 }
 
-/* Adjust the size of the icon or content inside the button */
 button span {
     font-size: 1.2em; /* Increase the font size */
 }
@@ -42,14 +40,6 @@ button span {
 
 #lock {
     background-image: image(url("./icons/lock.png"));
-}
-
-#logout {
-    background-image: image(url("./icons/logout.png"));
-}
-
-#suspend {
-    background-image: image(url("./icons/sleep.png"));
 }
 
 #shutdown {
@@ -60,8 +50,6 @@ button span {
     background-image: image(url("./icons/restart.png"));
 }
 
-#hibernate {
-    background-image: image(url("./icons/hibernate.png"));
-}
+
 
 
