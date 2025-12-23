@@ -1,0 +1,65 @@
+@import url("../../.cache/wal/colors-waybar.css");
+
+* {
+    all: unset;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    color: @color1;
+}
+
+/* Main container */
+.main-container {
+    background: @background; 
+    border-radius: 16px;
+    padding: 30px;
+    min-width: 350px;
+}
+
+.pfp-text{
+  margin-left: 90px;
+}
+/* System stats container */
+.sys {
+    padding: 20px 0;
+}
+
+/* CPU, RAM, DISK boxes - centrare tutto */
+.cpu-box, .ram-box, .disk-box {
+    padding: 10px;
+}
+
+/* Cerchi - con sfondo non riempito */
+circular-progress {
+    min-width: 90px;
+    min-height: 90px;
+}
+
+circular-progress.cpu,
+circular-progress.ram,
+circular-progress.disk {
+    color: @color1;
+    background-color: rgba(137, 180, 250, 0.15);
+}
+
+/* Icone dentro i cerchi - centrare */
+.cpuico, .ramico, .diskico {
+    font-size: 28px;
+    color: @foreground;
+}
+
+/* Testo sotto i cerchi - centrare */
+.cpu-text, .ram-text, .disk-text {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.cpu01, .ram01, .disk01 {
+    color: @foreground;
+    font-weight: bold;
+}
+
+.cpu02, .ram02, .disk02 {
+    color: @foreground;
+    font-weight: bold;
+    margin-left: 0px;
+}
+
