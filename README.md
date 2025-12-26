@@ -66,7 +66,7 @@ yay -S eww \
 1. Clone this repository in your .config directory:
 ```bash
 cd ~/.config
-git clone https://github.com/yourusername/.dotfiles.git .
+git clone https://github.com/NotSoupCarry/.dotfiles.git .
 ```
 
 
