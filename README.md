@@ -87,7 +87,7 @@ fi
 Feel free to modify any configuration to suit your needs. 
 This setup is designed to fit my needs and my work flow.
 
-To change the color scheme and the wallpaper:
+To change the color scheme and the wallpaper: <br>
 Place your wallpaper in `~/.config/wallpapers/` and press SUPER + TAB
 (I store my wallpapers at <a href="https://github.com/NotSoupCarry/wallpapers">my wallpapers repo</a>)
 
