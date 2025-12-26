@@ -5,6 +5,9 @@ My personal dotfiles for Arch Linux with Hyprland window manager.
 This repository contains my customized configuration files for a modern, visually appealing desktop environment on Arch Linux. 
 
 
+https://github.com/user-attachments/assets/0eab27ae-0a29-4f65-bcd6-28149bb63d8c
+
+
 <!-- 
 
 ## Screenshots
