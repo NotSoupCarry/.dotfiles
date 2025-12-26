@@ -63,7 +63,7 @@ yay -S eww \
 
 ## Setup
 
-1. Clone this repository in ur .config directory:
+1. Clone this repository in your .config directory:
 ```bash
 cd ~/.config
 git clone https://github.com/yourusername/.dotfiles.git .
@@ -84,11 +84,10 @@ fi
 
 ## Customization
 
-Feel free to modify any configuration to suit your needs. The setup is designed to fit my needs and my work flow.
+Feel free to modify any configuration to suit your needs. 
+This setup is designed to fit my needs and my work flow.
 
-### Theming
-
-To change the color scheme:
+To change the color scheme and the wallpaper:
 Place your wallpaper in `~/.config/wallpapers/` and press SUPER + TAB
 (I store my wallpapers at <a href="https://github.com/NotSoupCarry/wallpapers">my wallpapers repo</a>)
 
