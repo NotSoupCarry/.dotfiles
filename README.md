@@ -2,8 +2,6 @@
 
 My personal dotfiles for Arch Linux with Hyprland window manager.
 
-## Overview
-
 This repository contains my customized configuration files for a modern, visually appealing desktop environment on Arch Linux. 
 
 
@@ -38,9 +36,8 @@ sudo pacman -Syu
 
 Install the essential packages from official repositories:
 ```bash
-sudo pacman -S hyprland waybar kitty rofi  \
-    xdg-desktop-portal-hyprland \
-    qt5-wayland qt6-wayland \
+sudo pacman -S hyprland waybar kitty rofi xdg-desktop-portal-hyprland 
+qt5-wayland qt6-wayland 
     pipewire pipewire-pulse wireplumber \
     brightnessctl playerctl pamixer \
     grim slurp wl-clipboard \
